@@ -113,7 +113,7 @@ def exec_cmd(cmd, cwd=".", env=None, _raise=True):
 	if env:
 		env.update(os.environ.copy())
 
-	click.secho(f"$ {cmd}", fg="bright_black")
+	click.secho(f"$ {cmd}", fg="white")
 
 	cwd_info = f"cd {cwd} && " if cwd != "." else ""
 	cmd_log = f"{cwd_info}{cmd}"
